@@ -213,6 +213,7 @@ export default {
     }
   }
   .mobile-menu {
+    display: none;
     &__top,
     &__bottom {
       @include container();
@@ -225,6 +226,9 @@ export default {
       margin-bottom: 17px;
       padding: 17px 0;
       background-color: $color-main;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
     }
   }
   .open-menu__button {
