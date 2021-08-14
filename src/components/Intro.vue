@@ -55,9 +55,15 @@ export default {
   &__container {
     @include container();
     display: flex;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
   .description {
     width: 50%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
     &__title {
       text-transform: uppercase;
       h3 {
@@ -92,6 +98,11 @@ export default {
       background-color: transparent;
       border: none;
       cursor: pointer;
+    }
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 35px;
     }
   }
 }

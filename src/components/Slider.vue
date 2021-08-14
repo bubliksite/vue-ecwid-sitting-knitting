@@ -108,6 +108,9 @@ export default {
     img {
       object-fit: contain;
     }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
   }
   &__dots {
     @include container();
@@ -115,6 +118,9 @@ export default {
     bottom: 25px;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
     .slider__dot {
       width: 10px;
       height: 10px;
